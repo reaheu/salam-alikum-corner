@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { AlertTriangle, Brain, Clock, Target } from "lucide-react";
+import { AlertTriangle, Brain, Clock, Target, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -12,7 +12,7 @@ const Index = () => {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
             <Brain className="w-10 h-10 text-purple-600" />
-            اختبار الوظائف الإدراكية MBTI
+            اختبار الوظائف الإدراکية MBTI
           </h1>
           <p className="text-lg text-gray-600">
             اكتشف نمط شخصيتك ووظائفك الإدراكية بدقة
@@ -82,6 +82,29 @@ const Index = () => {
                 قد يستغرق الاختبار بعض الوقت، لذا تأكد أن لديك متسعًا من الوقت والتركيز.
               </p>
             </div>
+          </CardContent>
+        </Card>
+
+        {/* TikTok Section */}
+        <Card className="mb-8 border-2 border-pink-200 bg-pink-50">
+          <CardHeader>
+            <CardTitle className="text-xl text-pink-800 flex items-center gap-2">
+              📱 تابعنا على تيك توك
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-center">
+            <p className="text-gray-700 mb-4">
+              لمزيد من المحتوى حول الشخصيات والوظائف الإدراكية
+            </p>
+            <a
+              href="https://www.tiktok.com/@reatwiy?_t=ZS-8xfyr92oGP9&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg transition-colors"
+            >
+              <ExternalLink className="w-4 h-4" />
+              @reatwiy على تيك توك
+            </a>
           </CardContent>
         </Card>
 

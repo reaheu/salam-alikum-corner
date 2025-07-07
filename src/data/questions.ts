@@ -328,5 +328,213 @@ export const questions: Question[] = [
         functions: [{ name: "Si", weight: 3 }, { name: "Fi", weight: 1 }]
       }
     ]
+  },
+  {
+    id: 13,
+    question: "عندما تكون في مجموعة، تميل إلى:",
+    options: [
+      {
+        id: "13a",
+        text: "أخذ زمام المبادرة وتوجيه المحادثة",
+        functions: [{ name: "Te", weight: 3 }, { name: "Fe", weight: 2 }]
+      },
+      {
+        id: "13b",
+        text: "الاستماع والمساهمة عند الحاجة",
+        functions: [{ name: "Si", weight: 2 }, { name: "Ti", weight: 2 }]
+      },
+      {
+        id: "13c",
+        text: "إثارة أفكار جديدة ومثيرة",
+        functions: [{ name: "Ne", weight: 3 }, { name: "Se", weight: 1 }]
+      },
+      {
+        id: "13d",
+        text: "التأكد من راحة الجميع",
+        functions: [{ name: "Fe", weight: 3 }, { name: "Fi", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 14,
+    question: "كيف تتعامل مع الانتقادات؟",
+    options: [
+      {
+        id: "14a",
+        text: "أحللها بموضوعية وأستفيد منها",
+        functions: [{ name: "Ti", weight: 3 }, { name: "Te", weight: 2 }]
+      },
+      {
+        id: "14b",
+        text: "آخذها بشكل شخصي وأتأثر عاطفياً",
+        functions: [{ name: "Fi", weight: 3 }, { name: "Fe", weight: 1 }]
+      },
+      {
+        id: "14c",
+        text: "أركز على كيفية تأثيرها على علاقاتي",
+        functions: [{ name: "Fe", weight: 3 }, { name: "Si", weight: 1 }]
+      },
+      {
+        id: "14d",
+        text: "أقارنها بتجاربي السابقة",
+        functions: [{ name: "Si", weight: 3 }, { name: "Ni", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 15,
+    question: "ما نوع الأنشطة التي تستنزف طاقتك؟",
+    options: [
+      {
+        id: "15a",
+        text: "المهام الروتينية والمتكررة",
+        functions: [{ name: "Ne", weight: 3 }, { name: "Ni", weight: 2 }]
+      },
+      {
+        id: "15b",
+        text: "التفاعل الاجتماعي المكثف",
+        functions: [{ name: "Ti", weight: 2 }, { name: "Fi", weight: 2 }]
+      },
+      {
+        id: "15c",
+        text: "المواقف غير المنظمة والفوضوية",
+        functions: [{ name: "Si", weight: 3 }, { name: "Te", weight: 2 }]
+      },
+      {
+        id: "15d",
+        text: "التعامل مع الصراعات العاطفية",
+        functions: [{ name: "Ti", weight: 3 }, { name: "Te", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 16,
+    question: "كيف تتخذ قرارات سريعة؟",
+    options: [
+      {
+        id: "16a",
+        text: "أثق في غريزتي الأولى",
+        functions: [{ name: "Ni", weight: 3 }, { name: "Se", weight: 2 }]
+      },
+      {
+        id: "16b",
+        text: "أعتمد على ما جرب ونجح من قبل",
+        functions: [{ name: "Si", weight: 3 }, { name: "Te", weight: 1 }]
+      },
+      {
+        id: "16c",
+        text: "أفكر في أكبر عدد من البدائل",
+        functions: [{ name: "Ne", weight: 3 }, { name: "Ti", weight: 1 }]
+      },
+      {
+        id: "16d",
+        text: "أختار ما يخدم المجموعة أفضل",
+        functions: [{ name: "Fe", weight: 3 }, { name: "Te", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 17,
+    question: "ما الذي يجذبك أكثر في الأشخاص؟",
+    options: [
+      {
+        id: "17a",
+        text: "ذكاؤهم وقدرتهم على التحليل",
+        functions: [{ name: "Ti", weight: 3 }, { name: "Te", weight: 1 }]
+      },
+      {
+        id: "17b",
+        text: "إبداعهم وأفكارهم المبتكرة",
+        functions: [{ name: "Ne", weight: 3 }, { name: "Ni", weight: 2 }]
+      },
+      {
+        id: "17c",
+        text: "دفئهم وتعاطفهم",
+        functions: [{ name: "Fe", weight: 3 }, { name: "Fi", weight: 1 }]
+      },
+      {
+        id: "17d",
+        text: "موثوقيتهم واستقرارهم",
+        functions: [{ name: "Si", weight: 3 }, { name: "Te", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 18,
+    question: "كيف تتعامل مع المواعيد النهائية؟",
+    options: [
+      {
+        id: "18a",
+        text: "أخطط مسبقاً وأنجز قبل الموعد",
+        functions: [{ name: "Te", weight: 3 }, { name: "Si", weight: 2 }]
+      },
+      {
+        id: "18b",
+        text: "أعمل بشكل مكثف في اللحظة الأخيرة",
+        functions: [{ name: "Se", weight: 3 }, { name: "Ne", weight: 2 }]
+      },
+      {
+        id: "18c",
+        text: "أشعر بالضغط وأحتاج للدعم",
+        functions: [{ name: "Fe", weight: 2 }, { name: "Fi", weight: 2 }]
+      },
+      {
+        id: "18d",
+        text: "أركز على الجودة أكثر من السرعة",
+        functions: [{ name: "Ti", weight: 3 }, { name: "Ni", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 19,
+    question: "ما الذي يميز طريقة تفكيرك؟",
+    options: [
+      {
+        id: "19a",
+        text: "أفكر في الصورة الكبيرة والمعاني العميقة",
+        functions: [{ name: "Ni", weight: 3 }, { name: "Ne", weight: 1 }]
+      },
+      {
+        id: "19b",
+        text: "أركز على التفاصيل والحقائق الدقيقة",
+        functions: [{ name: "Si", weight: 3 }, { name: "Se", weight: 1 }]
+      },
+      {
+        id: "19c",
+        text: "أبحث عن الروابط والإمكانيات",
+        functions: [{ name: "Ne", weight: 3 }, { name: "Ni", weight: 1 }]
+      },
+      {
+        id: "19d",
+        text: "أحلل المنطق والتناسق",
+        functions: [{ name: "Ti", weight: 3 }, { name: "Te", weight: 1 }]
+      }
+    ]
+  },
+  {
+    id: 20,
+    question: "في البيئات الجديدة، أنت عادة:",
+    options: [
+      {
+        id: "20a",
+        text: "متحمس ومستعد للاستكشاف",
+        functions: [{ name: "Se", weight: 3 }, { name: "Ne", weight: 2 }]
+      },
+      {
+        id: "20b",
+        text: "حذر وأحتاج وقتاً للتأقلم",
+        functions: [{ name: "Si", weight: 3 }, { name: "Fi", weight: 1 }]
+      },
+      {
+        id: "20c",
+        text: "أراقب وأحلل قبل المشاركة",
+        functions: [{ name: "Ti", weight: 2 }, { name: "Ni", weight: 2 }]
+      },
+      {
+        id: "20d",
+        text: "أبحث عن طرق للتواصل مع الآخرين",
+        functions: [{ name: "Fe", weight: 3 }, { name: "Se", weight: 1 }]
+      }
+    ]
   }
 ];

@@ -3,7 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { AlertTriangle, Brain, Home, RotateCcw } from "lucide-react";
+import { AlertTriangle, Brain, Home, RotateCcw, ExternalLink } from "lucide-react";
 
 interface ResultData {
   mbtiType: string;
@@ -31,14 +31,14 @@ const Result = () => {
   }
 
   const functionDescriptions = {
-    Ne: { name: "الحدس الخارجي", description: "استكشاف الإمكانيات والأفكار الجديدة" },
-    Ni: { name: "الحدس الداخلي", description: "فهم الأنماط والرؤى العميقة" },
-    Se: { name: "الإحساس الخارجي", description: "الوعي باللحظة الحالية والتفاصيل" },
-    Si: { name: "الإحساس الداخلي", description: "الاعتماد على التجارب والذكريات" },
-    Te: { name: "التفكير الخارجي", description: "التنظيم وتحقيق الأهداف بكفاءة" },
-    Ti: { name: "التفكير الداخلي", description: "التحليل المنطقي والفهم العميق" },
-    Fe: { name: "المشاعر الخارجية", description: "الاهتمام بمشاعر واحتياجات الآخرين" },
-    Fi: { name: "المشاعر الداخلية", description: "الصدق مع القيم الشخصية" }
+    Ne: { name: "Ne - Extraverted Intuition", description: "استكشاف الإمكانيات والأفكار الجديدة" },
+    Ni: { name: "Ni - Introverted Intuition", description: "فهم الأنماط والرؤى العميقة" },
+    Se: { name: "Se - Extraverted Sensing", description: "الوعي باللحظة الحالية والتفاصيل" },
+    Si: { name: "Si - Introverted Sensing", description: "الاعتماد على التجارب والذكريات" },
+    Te: { name: "Te - Extraverted Thinking", description: "التنظيم وتحقيق الأهداف بكفاءة" },
+    Ti: { name: "Ti - Introverted Thinking", description: "التحليل المنطقي والفهم العميق" },
+    Fe: { name: "Fe - Extraverted Feeling", description: "الاهتمام بمشاعر واحتياجات الآخرين" },
+    Fi: { name: "Fi - Introverted Feeling", description: "الصدق مع القيم الشخصية" }
   };
 
   const mbtiDescriptions = {
@@ -141,6 +141,29 @@ const Result = () => {
           </CardContent>
         </Card>
 
+        {/* TikTok Section */}
+        <Card className="mb-8 border-2 border-pink-200 bg-pink-50">
+          <CardHeader>
+            <CardTitle className="text-xl text-pink-800 flex items-center gap-2">
+              📱 تابعنا على تيك توك
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-center">
+            <p className="text-gray-700 mb-4">
+              لمزيد من المحتوى حول الشخصيات والوظائف الإدراكية
+            </p>
+            <a
+              href="https://www.tiktok.com/@reatwiy?_t=ZS-8xfyr92oGP9&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg transition-colors"
+            >
+              <ExternalLink className="w-4 h-4" />
+              @reatwiy على تيك توك
+            </a>
+          </CardContent>
+        </Card>
+
         {/* Disclaimer */}
         <Card className="mb-8 border-2 border-amber-200 bg-amber-50">
           <CardHeader>
@@ -171,10 +194,11 @@ const Result = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2 text-gray-700">
-            <p>• نظرية كارل يونغ للوظائف الإدراكية</p>
-            <p>• مؤشر مايرز-بريغز للأنماط (MBTI)</p>
-            <p>• أبحاث علم النفس المعرفي الحديث</p>
-            <p>• دراسات الشخصية في علم النفس الإكلينيكي</p>
+            <p>• نظرية كارل يونغ للوظائف الإدراكية (Carl Jung's Cognitive Functions)</p>
+            <p>• مؤشر مايرز-بريغز للأنماط (Myers-Briggs Type Indicator - MBTI)</p>
+            <p>• أبحاث علم النفس المعرفي الحديث (Modern Cognitive Psychology Research)</p>
+            <p>• دراسات الشخصية في علم النفس الإكلينيكي (Clinical Psychology Studies)</p>
+            <p>• مصادر موثقة من مجتمع MBTI العالمي</p>
           </CardContent>
         </Card>
 
