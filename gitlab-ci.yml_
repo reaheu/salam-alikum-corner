@@ -1,0 +1,17 @@
+pages:
+  image: node:lts # ضروري لبيئة Node.js لبناء المشروع
+  stage: deploy
+  cache:
+    paths:
+      - node_modules/ # لتسريع البناء عبر تخزين الملحقات
+  before_script:
+    - npm install # تثبيت ملحقات المشروع
+  script:
+    - npm run build # تشغيل أمر البناء (Vite سينتج مجلد 'dist')
+    - rm -rf public # إزالة مجلد public إذا كان موجوداً
+    - mv dist public # نقل مجلد 'dist' الناتج إلى 'public' (الاسم الذي تبحث عنه GitLab Pages)
+  artifacts:
+    paths:
+      - public # المجلد الذي سيتم نشره
+  only:
+    - main # اسم الفرع الرئيسي لمشروعك
